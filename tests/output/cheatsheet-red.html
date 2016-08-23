@@ -6,16 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 				<style>
 @font-face {
-  font-family: octicons-anchor;
-  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
 }
 
 .markdown-body {
+  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
   color: #333;
-  overflow: hidden;
-  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.6;
   word-wrap: break-word;
@@ -23,15 +22,20 @@
 
 .markdown-body a {
   background-color: transparent;
+  -webkit-text-decoration-skip: objects;
 }
 
 .markdown-body a:active,
 .markdown-body a:hover {
-  outline: 0;
+  outline-width: 0;
 }
 
 .markdown-body strong {
-  font-weight: bold;
+  font-weight: inherit;
+}
+
+.markdown-body strong {
+  font-weight: bolder;
 }
 
 .markdown-body h1 {
@@ -40,16 +44,11 @@
 }
 
 .markdown-body img {
-  border: 0;
+  border-style: none;
 }
 
-.markdown-body hr {
-  box-sizing: content-box;
-  height: 0;
-}
-
-.markdown-body pre {
-  overflow: auto;
+.markdown-body svg:not(:root) {
+  overflow: hidden;
 }
 
 .markdown-body code,
@@ -59,28 +58,36 @@
   font-size: 1em;
 }
 
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
 .markdown-body input {
-  color: inherit;
   font: inherit;
   margin: 0;
 }
 
-.markdown-body html input[disabled] {
-  cursor: default;
-}
-
 .markdown-body input {
-  line-height: normal;
+  overflow: visible;
 }
 
-.markdown-body input[type="checkbox"] {
+.markdown-body button:-moz-focusring,
+.markdown-body [type="button"]:-moz-focusring,
+.markdown-body [type="reset"]:-moz-focusring,
+.markdown-body [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.markdown-body [type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
 }
 
 .markdown-body table {
-  border-collapse: collapse;
   border-spacing: 0;
+  border-collapse: collapse;
 }
 
 .markdown-body td,
@@ -93,7 +100,7 @@
 }
 
 .markdown-body input {
-  font: 13px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .markdown-body a {
@@ -115,12 +122,12 @@
   border-bottom: 1px solid #ddd;
 }
 
-.markdown-body hr:before {
+.markdown-body hr::before {
   display: table;
   content: "";
 }
 
-.markdown-body hr:after {
+.markdown-body hr::after {
   display: table;
   clear: both;
   content: "";
@@ -132,9 +139,9 @@
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
 }
 
 .markdown-body h1 {
@@ -161,13 +168,18 @@
   font-size: 11px;
 }
 
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 .markdown-body blockquote {
   margin: 0;
 }
 
 .markdown-body ul,
 .markdown-body ol {
-  padding: 0;
+  padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -199,25 +211,47 @@
   font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
-.markdown-body .select::-ms-expand {
+.markdown-body .pl-0 {
+  padding-left: 0 !important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 3px !important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 6px !important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 12px !important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px !important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 36px !important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 48px !important;
+}
+
+.markdown-body .form-select::-ms-expand {
   opacity: 0;
 }
 
-.markdown-body .octicon {
-  font: normal normal normal 16px/1 octicons-anchor;
-  display: inline-block;
-  text-decoration: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.markdown-body:before {
+  display: table;
+  content: "";
 }
 
-.markdown-body .octicon-link:before {
-  content: '\f05c';
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
 }
 
 .markdown-body>*:first-child {
@@ -234,13 +268,9 @@
 }
 
 .markdown-body .anchor {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  padding-right: 6px;
-  padding-left: 30px;
-  margin-left: -30px;
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
 }
 
 .markdown-body .anchor:focus {
@@ -253,7 +283,6 @@
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  position: relative;
   margin-top: 1em;
   margin-bottom: 16px;
   font-weight: bold;
@@ -266,9 +295,9 @@
 .markdown-body h4 .octicon-link,
 .markdown-body h5 .octicon-link,
 .markdown-body h6 .octicon-link {
-  display: none;
   color: #000;
   vertical-align: middle;
+  visibility: hidden;
 }
 
 .markdown-body h1:hover .anchor,
@@ -277,8 +306,6 @@
 .markdown-body h4:hover .anchor,
 .markdown-body h5:hover .anchor,
 .markdown-body h6:hover .anchor {
-  padding-left: 8px;
-  margin-left: -30px;
   text-decoration: none;
 }
 
@@ -288,7 +315,7 @@
 .markdown-body h4:hover .anchor .octicon-link,
 .markdown-body h5:hover .anchor .octicon-link,
 .markdown-body h6:hover .anchor .octicon-link {
-  display: inline-block;
+  visibility: visible;
 }
 
 .markdown-body h1 {
@@ -443,7 +470,8 @@
 
 .markdown-body img {
   max-width: 100%;
-  box-sizing: border-box;
+  box-sizing: content-box;
+  background-color: #fff;
 }
 
 .markdown-body code {
@@ -639,6 +667,23 @@
   box-shadow: inset 0 -1px 0 #bbb;
 }
 
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #4078c0;
+  border: 1px solid #4078c0;
+}
+
+.markdown-body :checked+.radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #4078c0;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: currentColor;
+}
+
 .markdown-body .task-list-item {
   list-style-type: none;
 }
@@ -647,15 +692,25 @@
   margin-top: 3px;
 }
 
+.markdown-body .task-list-item .handle {
+  display: none;
+}
+
 .markdown-body .task-list-item input {
-  margin: 0 0.35em 0.25em -1.6em;
+  margin: 0 0.2em 0.25em -1.6em;
   vertical-align: middle;
 }
 
-.markdown-body :checked+.radio-label {
-  z-index: 1;
-  position: relative;
-  border-color: #4078c0;
+.markdown-body .header-search-input::-ms-clear {
+  display: none;
+}
+
+.markdown-body .org-validate-group input::-ms-clear {
+  display: none;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
 }
 </style>     
 				<style>
@@ -666,14 +721,14 @@
     <body>
     	<article class="markdown-body">
 				<h1>
-<a id="user-content-github-flavored-markdown" class="anchor" href="#github-flavored-markdown" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Flavored Markdown</h1>
+<a id="user-content-github-flavored-markdown" class="anchor" href="#github-flavored-markdown" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub Flavored Markdown</h1>
 
 <p>This is intended as a quick reference and showcase. For more complete info, see <a href="http://daringfireball.net/projects/markdown/">John Gruber's original spec</a> and the <a href="http://github.github.com/github-flavored-markdown/">Github-flavored Markdown info page</a>.</p>
 
 <p>Note that there is also a <a href="./Markdown-Here-Cheatsheet">Cheatsheet specific to Markdown Here</a> if that's what you're looking for. You can also check out <a href="./Other-Markdown-Tools">more Markdown tools</a>.</p>
 
 <h5>
-<a id="user-content-table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Table of Contents</h5>
+<a id="user-content-table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of Contents</h5>
 
 <p><a href="#headers">Headers</a><br>
 <a href="#emphasis">Emphasis</a><br>
@@ -691,7 +746,7 @@
 <p><a name="user-content-headers"></a></p>
 
 <h2>
-<a id="user-content-headers" class="anchor" href="#headers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Headers</h2>
+<a id="user-content-headers" class="anchor" href="#headers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Headers</h2>
 
 <pre lang="no-highlight"><code># H1
 ## H2
@@ -710,35 +765,35 @@ Alt-H2
 </code></pre>
 
 <h1>
-<a id="user-content-h1" class="anchor" href="#h1" aria-hidden="true"><span class="octicon octicon-link"></span></a>H1</h1>
+<a id="user-content-h1" class="anchor" href="#h1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>H1</h1>
 
 <h2>
-<a id="user-content-h2" class="anchor" href="#h2" aria-hidden="true"><span class="octicon octicon-link"></span></a>H2</h2>
+<a id="user-content-h2" class="anchor" href="#h2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>H2</h2>
 
 <h3>
-<a id="user-content-h3" class="anchor" href="#h3" aria-hidden="true"><span class="octicon octicon-link"></span></a>H3</h3>
+<a id="user-content-h3" class="anchor" href="#h3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>H3</h3>
 
 <h4>
-<a id="user-content-h4" class="anchor" href="#h4" aria-hidden="true"><span class="octicon octicon-link"></span></a>H4</h4>
+<a id="user-content-h4" class="anchor" href="#h4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>H4</h4>
 
 <h5>
-<a id="user-content-h5" class="anchor" href="#h5" aria-hidden="true"><span class="octicon octicon-link"></span></a>H5</h5>
+<a id="user-content-h5" class="anchor" href="#h5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>H5</h5>
 
 <h6>
-<a id="user-content-h6" class="anchor" href="#h6" aria-hidden="true"><span class="octicon octicon-link"></span></a>H6</h6>
+<a id="user-content-h6" class="anchor" href="#h6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>H6</h6>
 
 <p>Alternatively, for H1 and H2, an underline-ish style:</p>
 
 <h1>
-<a id="user-content-alt-h1" class="anchor" href="#alt-h1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alt-H1</h1>
+<a id="user-content-alt-h1" class="anchor" href="#alt-h1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Alt-H1</h1>
 
 <h2>
-<a id="user-content-alt-h2" class="anchor" href="#alt-h2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alt-H2</h2>
+<a id="user-content-alt-h2" class="anchor" href="#alt-h2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Alt-H2</h2>
 
 <p><a name="user-content-emphasis"></a></p>
 
 <h2>
-<a id="user-content-emphasis" class="anchor" href="#emphasis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Emphasis</h2>
+<a id="user-content-emphasis" class="anchor" href="#emphasis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Emphasis</h2>
 
 <pre lang="no-highlight"><code>Emphasis, aka italics, with *asterisks* or _underscores_.
 
@@ -760,7 +815,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 <p><a name="user-content-lists"></a></p>
 
 <h2>
-<a id="user-content-lists" class="anchor" href="#lists" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lists</h2>
+<a id="user-content-lists" class="anchor" href="#lists" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lists</h2>
 
 <p>(In this example, leading and trailing spaces are shown with with dots: ⋅)</p>
 
@@ -816,7 +871,7 @@ Note that this line is separate, but within the same paragraph.<br>
 <p><a name="user-content-links"></a></p>
 
 <h2>
-<a id="user-content-links" class="anchor" href="#links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links</h2>
+<a id="user-content-links" class="anchor" href="#links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Links</h2>
 
 <p>There are two ways to create links.</p>
 
@@ -864,7 +919,7 @@ example.com (but not on Github, for example).</p>
 <p><a name="user-content-images"></a></p>
 
 <h2>
-<a id="user-content-images" class="anchor" href="#images" aria-hidden="true"><span class="octicon octicon-link"></span></a>Images</h2>
+<a id="user-content-images" class="anchor" href="#images" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Images</h2>
 
 <pre lang="no-highlight"><code>Here's our logo (hover to see the title text):
 
@@ -888,7 +943,7 @@ Reference-style:
 <p><a name="user-content-code"></a></p>
 
 <h2>
-<a id="user-content-code-and-syntax-highlighting" class="anchor" href="#code-and-syntax-highlighting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code and Syntax Highlighting</h2>
+<a id="user-content-code-and-syntax-highlighting" class="anchor" href="#code-and-syntax-highlighting" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code and Syntax Highlighting</h2>
 
 <p>Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and <em>Markdown Here</em> -- support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. <em>Markdown Here</em> supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the <a href="http://softwaremaniacs.org/media/soft/highlight/test.html">highlight.js demo page</a>.</p>
 
@@ -915,11 +970,11 @@ But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
 ```
 </code></pre>
 
-<div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> s <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>JavaScript syntax highlighting<span class="pl-pds">"</span></span>;
-<span class="pl-c1">alert</span>(s);</pre></div>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> s <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>JavaScript syntax highlighting<span class="pl-pds">"</span></span>;
+<span class="pl-en">alert</span>(s);</pre></div>
 
-<div class="highlight highlight-python"><pre>s <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Python syntax highlighting<span class="pl-pds">"</span></span>
-<span class="pl-k">print</span> s</pre></div>
+<div class="highlight highlight-source-python"><pre>s <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Python syntax highlighting<span class="pl-pds">"</span></span>
+<span class="pl-c1">print</span> s</pre></div>
 
 <pre><code>No language indicated, so no syntax highlighting in Markdown Here (varies on Github). 
 But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
@@ -928,7 +983,7 @@ But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
 <p><a name="user-content-tables"></a></p>
 
 <h2>
-<a id="user-content-tables" class="anchor" href="#tables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tables</h2>
+<a id="user-content-tables" class="anchor" href="#tables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tables</h2>
 
 <p>Tables aren't part of the core Markdown spec, but they are part of GFM and <em>Markdown Here</em> supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.</p>
 
@@ -1006,7 +1061,7 @@ Markdown | Less | Pretty
 <p><a name="user-content-blockquotes"></a></p>
 
 <h2>
-<a id="user-content-blockquotes" class="anchor" href="#blockquotes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Blockquotes</h2>
+<a id="user-content-blockquotes" class="anchor" href="#blockquotes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Blockquotes</h2>
 
 <pre lang="no-highlight"><code>&gt; Blockquotes are very handy in email to emulate reply text.
 &gt; This line is part of the same quote.
@@ -1030,7 +1085,7 @@ This line is part of the same quote.</p>
 <p><a name="user-content-html"></a></p>
 
 <h2>
-<a id="user-content-inline-html" class="anchor" href="#inline-html" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inline HTML</h2>
+<a id="user-content-inline-html" class="anchor" href="#inline-html" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Inline HTML</h2>
 
 <p>You can also use raw HTML in your Markdown, and it'll mostly work pretty well. </p>
 
@@ -1054,7 +1109,7 @@ This line is part of the same quote.</p>
 <p><a name="user-content-hr"></a></p>
 
 <h2>
-<a id="user-content-horizontal-rule" class="anchor" href="#horizontal-rule" aria-hidden="true"><span class="octicon octicon-link"></span></a>Horizontal Rule</h2>
+<a id="user-content-horizontal-rule" class="anchor" href="#horizontal-rule" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Horizontal Rule</h2>
 
 <pre><code>Three or more...
 
@@ -1088,7 +1143,7 @@ Underscores
 <p><a name="user-content-lines"></a></p>
 
 <h2>
-<a id="user-content-line-breaks" class="anchor" href="#line-breaks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Line Breaks</h2>
+<a id="user-content-line-breaks" class="anchor" href="#line-breaks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Line Breaks</h2>
 
 <p>My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend. </p>
 
@@ -1114,7 +1169,7 @@ This line is only separated by a single newline, so it's a separate line in the 
 <p><a name="user-content-videos"></a></p>
 
 <h2>
-<a id="user-content-youtube-videos" class="anchor" href="#youtube-videos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Youtube videos</h2>
+<a id="user-content-youtube-videos" class="anchor" href="#youtube-videos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Youtube videos</h2>
 
 <p>They can't be added directly but you can add an image with a link to the video like this:</p>
 

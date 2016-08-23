@@ -18,11 +18,14 @@ var Mdex = function(){
 // mdFile, templateFile, outputFile, callback
 Mdex.generate = function(mdFile, templateFile, outputFile, callback) {
 	
+	
+	
 	if (callback == null && String(typeof(outputFile)) == 'function'){
 		// No template arg
 		callback = outputFile;
 		outputFile = templateFile;
 		templateFile = null;
+		
 	}
 	
 	if (!templateFile){
@@ -47,13 +50,21 @@ Mdex.generate = function(mdFile, templateFile, outputFile, callback) {
 	
 	// Get css from github
 	githubMarkdownCss(function (err, css) {
-	
+		
 		if (err){
 			return callback(err);
 		}
-	
+		
+		
+		//console.log('HOLA');
+		
+		githubMarkdownRender(markdown).then(body => {
+			
 		// Render md as html
-		githubMarkdownRender(markdown, function (err, body) {
+		//githubMarkdownRender(markdown, function (err, body) {
+		
+			console.log('githubMarkdownRender GOT');
+		
 			
 			if (err){
 				return callback(err);

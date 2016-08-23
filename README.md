@@ -84,3 +84,4 @@ Note
 - v0.1.2 - Command line pathing fix
 - v0.1.3 - Added template config option   
 - v0.1.4 - Documentation fix
+- v0.1.5 - Dependencies update

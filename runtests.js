@@ -17,6 +17,7 @@ mdex.generate('./tests/cheatsheet.md', './tests/output/cheatsheet.html', functio
 	
 	console.log('Successfully wrote to ' + outputFile);
 	
+	/*
 	spinner.start();
 	
 	mdex.generate('./README.md', './tests/output/readme.html', function(err, outputFile){
@@ -44,5 +45,7 @@ mdex.generate('./tests/cheatsheet.md', './tests/output/cheatsheet.html', functio
 		});
 
 	});
+	
+	*/
 
 });
